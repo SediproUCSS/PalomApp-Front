@@ -1,0 +1,55 @@
+<!--
+  Generated template for the SignUpPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="PalomApp">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Ingresar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Correo UCSS</ion-label>
+    <ion-input 
+    [(ngModel)]="user.email" 
+    name="email" 
+    type="text" 
+    autocapitalize="off" 
+    required></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input 
+      [(ngModel)]="user.password" 
+      name="password" 
+      type="password" 
+      required></ion-input>
+  </ion-item>
+  <div class="form-item">
+    <button 
+    ion-button 
+    (click)="login()" 
+    type="submit" 
+    color="PalomApp" 
+    block>Iniciar Sesión</button>
+
+    <button 
+    ion-button 
+    (click)="signin()" 
+    type="submit" 
+    color="PalomApp" 
+    block
+  >Dar de alta
+  </button>
+
+  </div>
+</ion-content>
